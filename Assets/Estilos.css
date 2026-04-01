@@ -1,3 +1,10 @@
+body{
+    font-family: 'inter',sans-serif;
+}
+#titulo{
+    font-family: 'playfair Display',serif;
+    text-align: center;
+}
 header {
     background-color: red;
     display: flex;
@@ -23,4 +30,13 @@ ul {
 img{
     width: 25px;
     height: auto;
+}
+
+button{
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+
 }
