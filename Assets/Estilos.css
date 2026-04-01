@@ -1,0 +1,26 @@
+header {
+    background-color: red;
+    display: flex;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* clave para que ocupe todo */
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.Links {
+    padding: 10px;
+}
+img{
+    width: 25px;
+    height: auto;
+}
