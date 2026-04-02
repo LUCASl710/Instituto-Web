@@ -40,3 +40,11 @@ button{
     font-size: 14px;
 
 }
+
+.botons{
+    display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente (si el contenedor tiene altura) */
+  height: 100vh;           /* Ejemplo para centrar en toda la pantalla */
+    margin: 10px;
+}
