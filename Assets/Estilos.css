@@ -22,6 +22,7 @@ ul {
     display: flex;
     list-style: none;
     gap: 20px;
+    text-decoration: none;
 }
 
 .Links {
@@ -47,4 +48,9 @@ button{
   align-items: center;     /* Centra verticalmente (si el contenedor tiene altura) */
   height: 100vh;           /* Ejemplo para centrar en toda la pantalla */
     margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
