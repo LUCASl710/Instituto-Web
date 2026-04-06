@@ -1,60 +1,288 @@
-body{
-    font-family: 'inter',sans-serif;
+/* ========================
+   RESET Y BASE
+======================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-#titulo{
-    font-family: 'playfair Display',serif;
-    text-align: center;
+
+body {
+    font-family: 'Inter', sans-serif;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ========================
+   HEADER Y NAV
+======================== */
 header {
-    background-color: red;
-    display: flex;
-    padding: 10px;
+    background-color: #7b0d1e; /* bordo oscuro */
+    padding: 12px 24px;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%; /* clave para que ocupe todo */
+    width: 100%;
 }
 
+.logo {
+    width: 60px;
+    height: auto;
+
+}
+
+/* Título C&P SOFT */
+.titulo-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+}
+
+.titulo-cp {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 4px;
+}
+
+.titulo-soft {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #e8a0a0; /* rojo claro apagado */
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+/* Nav links */
 ul {
     display: flex;
     list-style: none;
-    gap: 20px;
-    text-decoration: none;
+    gap: 8px;
 }
 
-.Links {
-    padding: 10px;
-}
-img{
-    width: 25px;
-    height: auto;
+.link-nav {
+    padding: 8px 14px;
+    color: #f0e0e0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: background-color 0.25s, color 0.25s;
 }
 
-button{
-    border-radius: 5px;
-    padding: 10px;
+.link-nav:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+}
+
+/* Botón Aula Virtual */
+.btn-aula {
+    background-color: #c1121f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-size: 0.9rem;
+    font-weight: 700;
     cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-aula:hover {
+    background-color: #e63946;
+    transform: translateY(-2px);
+}
+
+/* ========================
+   CARRUSEL
+======================== */
+.img-carrusel {
+    padding: 20px;
+    margin: 5px;
+    height: 600px;
+    object-fit: cover;
+}
+
+/* ========================
+   SECCIÓN VER CARRERAS
+======================== */
+.seccion-carreras {
     display: flex;
-    font-size: 14px;
-
+    justify-content: center;
+    padding: 48px 0 40px;
+    background-color: #fff;
 }
 
-.botons{
+.btn-carreras {
+    background-color: #7b0d1e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 36px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-carreras:hover {
+    background-color: #c1121f;
+    transform: translateY(-2px);
+}
+
+/* ========================
+   SECCIÓN FORMULARIO
+======================== */
+.seccion-formulario {
+    background-color: #f7f0f0; /* blanco rosado muy suave */
+    padding: 60px 20px;
+}
+
+.texto-formulario {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.texto-formulario h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #7b0d1e;
+    margin-bottom: 12px;
+}
+
+.texto-formulario p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.card-formulario {
+    background-color: #7b0d1e;
+    padding: 36px;
+    border-radius: 12px;
+}
+
+.card-formulario .form-label {
+    color: #f5e0e0;
+    font-weight: 500;
+}
+
+.card-formulario .form-control,
+.card-formulario .form-select {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 6px;
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 12px;
+    background-color: #c1121f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-enviar:hover {
+    background-color: #e63946;
+    transform: translateY(-2px);
+}
+
+/* ========================
+   BOTÓN FLOTANTE WHATSAPP
+======================== */
+.btn-whatsapp {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 58px;
+    height: 58px;
+    background-color: #25d366;
+    border-radius: 50%;
     display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center;     /* Centra verticalmente (si el contenedor tiene altura) */
-  height: 100vh;           /* Ejemplo para centrar en toda la pantalla */
-    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transition: transform 0.2s, box-shadow 0.2s;
+    z-index: 999;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
+.btn-whatsapp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
 }
-li{
-    text-decoration: none;
-    color: inherit;
+
+.btn-whatsapp img {
+    width: 34px;
+    height: 34px;
+}
+
+/* ========================
+   FOOTER
+======================== */
+footer {
+    background-color: #7b0d1e;
+    color: #f5e0e0;
+    padding: 48px 20px 24px;
+    margin-top: 0;
+}
+
+.columna-footer {
+    text-align: center;
+}
+
+.footer-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.footer-texto {
+    font-size: 0.9rem;
+    color: #e0c0c0;
+    line-height: 1.6;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.red-link {
+    color: #e0c0c0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.25s;
+}
+
+.red-link:hover {
+    color: #ffffff;
+}
+
+.footer-derechos {
+    text-align: center;
+    margin-top: 36px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    font-size: 0.85rem;
+    color: #c09090;
 }
