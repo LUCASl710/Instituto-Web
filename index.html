@@ -9,59 +9,56 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 </head>
 <body>
+
     <header>
-
-    <!--         Este seria el Nombre del instituto     -->
-    
-        <!--      Barra de navegacion         -->
         <nav>
-                        <!--       Aca va el logo        -->
+            <!-- Logo -->
+            <img class="logo" src="./Assets/Img/diseño2 (1).png" alt="Logo del instituto">
 
-<a href="./index.html"><img src="./Assets/Img/diseño1.png" alt="seria el logo" > </a>
-        
-        <h1 id="titulo">C&P SOFT</h1>
-            <div class="Contenedor">
-                <ul>
-                    <li class="Links"><a href="./index.html">inicio</a></li>
-                    <li class="Links"><a href="./Carreras.html">Carreras</a></li>
-                    <li class="Links"><a href="./Contactos.html">Contactos</a></li>
-                </ul>
-            </div> 
+            <!-- Nombre del instituto -->
+            <h1 id="titulo">C&P SOFT</h1>
 
-            <!--Boton del aula virtual-->
-            <button>Aula Virtual</button>
+            <!-- Links de navegación -->
+            <ul>
+                <li><a class="link-nav" href="#">Inicio</a></li>
+                <li><a class="link-nav" href="#">Carreras</a></li>
+                <li><a class="link-nav" href="#">Contactos</a></li>
+            </ul>
+
+            <!-- Botón aula virtual -->
+            <button class="btn-aula">Aula Virtual</button>
         </nav>
     </header>
 
+    <!-- Carrusel -->
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="./Assets/Img/carrousel1.png" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="./Assets/Img/carrousel2.png" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="./Assets/Img/carrousel3.png" class="d-block w-100" alt="...">
-        </div>
+            <div class="carousel-item active">
+                <img src="./Assets/Img/carrousel1.png" class="d-block w-100 img-carrusel" alt="Foto instituto 1">
+            </div>
+            <div class="carousel-item">
+                <img src="./Assets/Img/carrousel2.png" class="d-block w-100 img-carrusel" alt="Foto instituto 2">
+            </div>
+            <div class="carousel-item">
+                <img src="./Assets/Img/carrousel3.png" class="d-block w-100 img-carrusel" alt="Foto instituto 3">
+            </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
         </button>
     </div>
-    <br>
-    <section class="botons">
-        <button>Ver las Carreras</button>
-    </section>
-    <br>
-    
 
-<script src="./Assets/Script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Sección Ver Carreras -->
+    <section class="seccion-carreras">
+        <button class="btn-carreras">Ver las Carreras</button>
+    </section>
+
+    <script src="./Assets/Script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
