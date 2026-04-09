@@ -1,5 +1,5 @@
 /* ========================
-   RESET Y BASE
+    RESET Y BASE
 ======================== */
 * {
     box-sizing: border-box;
@@ -17,7 +17,7 @@ a {
 }
 
 /* ========================
-   HEADER Y NAV
+    HEADER Y NAV
 ======================== */
 header {
     background-color: #7b0d1e; /* bordo oscuro */

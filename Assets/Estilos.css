@@ -1,5 +1,5 @@
 /* ========================
-   RESET Y BASE
+    RESET Y BASE
 ======================== */
 * {
     box-sizing: border-box;
@@ -17,7 +17,7 @@ a {
 }
 
 /* ========================
-   HEADER Y NAV
+    HEADER Y NAV
 ======================== */
 header {
     background-color: #7b0d1e; /* bordo oscuro */
@@ -103,7 +103,7 @@ ul {
 }
 
 /* ========================
-   CARRUSEL
+    CARRUSEL
 ======================== */
 .img-carrusel {
     padding: 20px;
@@ -113,7 +113,7 @@ ul {
 }
 
 /* ========================
-   SECCIÓN VER CARRERAS
+    SECCIÓN VER CARRERAS
 ======================== */
 .seccion-carreras {
     display: flex;
@@ -141,7 +141,7 @@ ul {
 }
 
 /* ========================
-   SECCIÓN FORMULARIO
+    SECCIÓN FORMULARIO
 ======================== */
 .seccion-formulario {
     background-color: #f7f0f0; /* blanco rosado muy suave */
@@ -204,7 +204,7 @@ ul {
 }
 
 /* ========================
-   BOTÓN FLOTANTE WHATSAPP
+    BOTÓN FLOTANTE WHATSAPP
 ======================== */
 .btn-whatsapp {
     position: fixed;
@@ -233,7 +233,7 @@ ul {
 }
 
 /* ========================
-   FOOTER
+    FOOTER
 ======================== */
 footer {
     background-color: #7b0d1e;
@@ -287,3 +287,6 @@ footer {
     color: #c09090;
 }
 
+.col-md-4 columna-footer{
+    margin: 5px;
+}
