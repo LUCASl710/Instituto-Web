@@ -1,5 +1,5 @@
 /* ========================
-   RESET Y BASE
+    RESET Y BASE
 ======================== */
 * {
     box-sizing: border-box;
@@ -17,7 +17,7 @@ a {
 }
 
 /* ========================
-   HEADER Y NAV
+    HEADER Y NAV
 ======================== */
 header {
     background-color: #7b0d1e; /* bordo oscuro */
@@ -100,4 +100,215 @@ ul {
 .btn-aula:hover {
     background-color: #e63946;
     transform: translateY(-2px);
+}
+
+/* ========================
+    PÁGINA CARRERAS
+======================== */
+.carreras-hero {
+    background-color: #7b0d1e;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.carreras-hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.carreras-hero p {
+    font-size: 1.1rem;
+    color: #e0c0c0;
+}
+
+.seccion-cards {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.carrera-card {
+    background-color: #fff;
+    border: 2px solid #f0dada;
+    border-radius: 12px;
+    padding: 32px 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+    height: 100%;
+}
+
+.carrera-card:hover {
+    transform: translateY(-6px);
+    border-color: #7b0d1e;
+    box-shadow: 0 8px 24px rgba(123, 13, 30, 0.15);
+}
+
+.card-icono {
+    font-size: 2.8rem;
+    margin-bottom: 16px;
+}
+
+.card-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #7b0d1e;
+    margin-bottom: 10px;
+}
+
+.card-descripcion {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.card-cta {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #c1121f;
+}
+
+/* MODALES */
+.modal-carrera {
+    background-color: #7b0d1e;
+    color: #f5e0e0;
+    border: none;
+    border-radius: 12px;
+}
+
+.modal-carrera .modal-header {
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.modal-carrera .modal-title {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.modal-carrera .modal-body p {
+    margin-bottom: 8px;
+}
+
+.modal-carrera .modal-body strong {
+    color: #ffffff;
+}
+
+.modal-hr {
+    border-color: rgba(255,255,255,0.2);
+    margin: 16px 0;
+}
+
+.modal-lista {
+    padding-left: 20px;
+    color: #e0c0c0;
+}
+
+.modal-lista li {
+    margin-bottom: 6px;
+}
+
+.modal-carrera .modal-footer {
+    border-top: 1px solid rgba(255,255,255,0.15);
+    justify-content: center;
+}
+
+.btn-modal {
+    background-color: #c1121f;
+    color: white;
+    padding: 10px 28px;
+    border-radius: 6px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.btn-modal:hover {
+    background-color: #e63946;
+    color: white;
+}
+
+.btn-whatsapp{
+    width: 25px;
+    height: auto;
+}
+
+footer {
+    background-color: #7b0d1e;
+    color: #f5e0e0;
+    padding: 48px 20px 24px;
+    margin-top: 0;
+}
+
+.columna-footer {
+    text-align: center;
+}
+
+.footer-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.footer-texto {
+    font-size: 0.9rem;
+    color: #e0c0c0;
+    line-height: 1.6;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.red-link {
+    color: #e0c0c0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.25s;
+}
+
+.red-link:hover {
+    color: #ffffff;
+}
+.footer-derechos {
+    text-align: center;
+    margin-top: 36px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    font-size: 0.85rem;
+    color: #c09090;
+}
+
+.row-gy-4{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.card-carreras{
+    margin: 10px;
+    border-radius: 5px;
+    
+}
+
+.card-title{
+    margin: 5px;
+    padding: 10px;
+}
+.card-text{
+    margin: 10px;
+}
+.btn-primary{
+    
+    color: #e63946;
+
 }
