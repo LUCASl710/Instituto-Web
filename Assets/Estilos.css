@@ -145,7 +145,7 @@ ul {
 ======================== */
 .seccion-formulario {
     background-color: #f7f0f0; /* blanco rosado muy suave */
-    padding: 60px 20px;
+    padding: 80px 20px;
 }
 
 .texto-formulario {
@@ -289,4 +289,33 @@ footer {
 
 .col-md-4 columna-footer{
     margin: 5px;
+}
+
+.card-modalidades{
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 150px;
+    font-size: 30px;
+    box-shadow:  0 4px 8px rgba(0,0,0,0.3);
+    background: transparent;
+    border-radius: 15px;
+    margin: 100px;
+}
+.modalidad{
+    padding: 100px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card-img-top{
+    width: 170px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
