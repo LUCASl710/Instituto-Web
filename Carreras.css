@@ -20,7 +20,7 @@ a {
     HEADER Y NAV
 ======================== */
 header {
-    background-color: #7b0d1e; /* bordo oscuro */
+    background-color: #ffffff; /* bordo oscuro */
     padding: 12px 24px;
 }
 
@@ -49,7 +49,7 @@ nav {
     font-family: 'Playfair Display', serif;
     font-size: 1.8rem;
     font-weight: 900;
-    color: #ffffff;
+    color: #ff0000;
     letter-spacing: 4px;
 }
 
@@ -57,7 +57,7 @@ nav {
     font-family: 'Inter', sans-serif;
     font-size: 0.75rem;
     font-weight: 600;
-    color: #e8a0a0; /* rojo claro apagado */
+    color: #ff0000; /* rojo claro apagado */
     letter-spacing: 8px;
     text-transform: uppercase;
 }
@@ -71,7 +71,7 @@ ul {
 
 .link-nav {
     padding: 8px 14px;
-    color: #f0e0e0;
+    color: #ff0000;
     font-size: 0.95rem;
     font-weight: 500;
     border-radius: 4px;
@@ -80,13 +80,13 @@ ul {
 
 .link-nav:hover {
     background-color: rgba(255, 255, 255, 0.12);
-    color: #ffffff;
+    color: #561818;
 }
 
 /* Botón Aula Virtual */
 .btn-aula {
-    background-color: #c1121f;
-    color: white;
+    background-color: #ff0011;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 6px;
     padding: 10px 18px;
@@ -98,7 +98,7 @@ ul {
 }
 
 .btn-aula:hover {
-    background-color: #e63946;
+    background-color: #8d0813;
     transform: translateY(-2px);
 }
 
@@ -299,7 +299,7 @@ color: white;
 
 .card-carreras{
     margin: 10px;
-    border-radius: 5px;
+    
     
 }
 
@@ -310,8 +310,7 @@ color: white;
 .card-text{
     margin: 10px;
 }
-
-.card-img-top{
-    border-radius: 7px;
-    cursor: pointer;
-}
+.btn-primary{
+    
+    color: #e63946; 
+    }
