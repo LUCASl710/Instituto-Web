@@ -291,7 +291,10 @@ footer {
 display: flex;
 justify-content: center;
 align-items: center;
-
+margin: 50px;
+background-color: #c1121f;
+padding: 50px;
+color: white;
 }
 
 .card-carreras{
@@ -307,8 +310,8 @@ align-items: center;
 .card-text{
     margin: 10px;
 }
-.btn-primary{
-    
-    color: #e63946;
 
+.card-img-top{
+    border-radius: 7px;
+    cursor: pointer;
 }
