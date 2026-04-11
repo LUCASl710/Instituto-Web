@@ -293,11 +293,12 @@ footer {
 
 .card-modalidades{
     text-align: center;
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
+    flex-direction: column;
     height: 150px;
+    width: 150px;
     font-size: 30px;
     box-shadow:  0 4px 8px rgba(0,0,0,0.3);
     background: transparent;
@@ -310,13 +311,21 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vh;
     background-color: #7b0d1e;
 }
 .card-img-top{
     width: 170px;
     height: 170px;
+    margin: 10px;
     
 }
 .seccion-carreras{
     background-color: #7b0d1e;
+}
+.card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
