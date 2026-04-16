@@ -25,8 +25,7 @@
                 <li><a class="link-nav" href="./Carreras.html">Carreras</a></li>
                 <li><a class="link-nav" href="./Contactos.html">Contactos</a></li>
             </ul>
-
-            <button class="btn-aula">Aula Virtual</button>
+            <a href="./Aula-Virtual/Login.php" class="btn-aula">Aula Virtual</a>
         </nav>
     </header>
 
@@ -57,16 +56,31 @@
                                                                                             <section class="seccion-carreras">
         <button class="btn-carreras">Ver las Carreras</button>
     </section>
-<section class="modalidades">
-    <div class="titulo-modalidad">
-        <h2 class="h2-modalidad">Modalidades disponibles</h2>
-    </div>
-    <div class="card-modalidades" style="width: 18rem;height: 15rem;">
-    <div class="card-modalidades" style="width: 20rem; height: 15rem;">
-    <img src="./Assets/Img/Cpresencial.svg" class="card-img-top" alt="Icono de presencialidad" width="50px" height="50px">
-    <div class="card-body">
-    <p class="card-text">Presencial</p>
-    </div>
+    <section class="seccion-modalidades">
+        <h2 class="titulo-modalidades">Tipo de modalidades</h2>
+        <div class="container">
+            <div class="row justify-content-center gy-4">
+    
+                <div class="col-6 col-md-3">
+                    <div class="card-modalidad">
+                        <img src="./Assets/Img/Cpresencial.svg" alt="Presencial">
+                        <p>Presencial</p>
+                    </div>
+                </div>
+    
+                <!-- Si después agregás más modalidades, copiás este bloque -->
+                <!-- 
+                <div class="col-6 col-md-3">
+                    <div class="card-modalidad">
+                        <img src="./Assets/Img/online.svg" alt="Online">
+                        <p>Online</p>
+                    </div>
+                </div>
+                -->
+    
+            </div>
+        </div>
+    </section>
 
 
 </div>
@@ -111,7 +125,7 @@
                             <label for="mensaje" class="form-label">Tu consulta</label>
                             <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribí tu consulta acá..."></textarea>
                         </div>
-                        <button class="btn-enviar" >Enviar</button>
+                        <button class="btn-enviar">Enviar</button>
                     </div>
                 </div>
             </div>
@@ -120,7 +134,7 @@
     </section>
 
     <!-- Botón flotante WhatsApp -->
-    <a href="" target="_blank" class="btn-whatsapp" title="Contactanos por WhatsApp">
+    <a href="https://wa.me/qr/VV7W5YI4R5W5L1" target="_blank" class="btn-whatsapp" title="Contactanos por WhatsApp">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
     </a>
 <!-- FOOTER -->
