@@ -124,8 +124,6 @@ ul {
 
 .btn-carreras {
     background-color: #ffffff;
-    background-color: #fff;
-
     color: #c1121f;
     border: none;
     border-radius: 6px;
@@ -138,9 +136,8 @@ ul {
 }
 
 .btn-carreras:hover {
-        background-color: #cf3f49;
-        background-color: #ff979e;
-transform: translateY(-2px);
+    background-color: #cf3f49;
+    transform: translateY(-2px);
     color: #f0e0e0;
 }
 
@@ -305,17 +302,18 @@ footer {
 }
 
 .card-modalidades {
-    display: flex;
+display: flex;
   flex-direction: column;   /* Alinea imagen y texto en columna */
   align-items: center;      /* Centra la imagen y el texto internamente */
   text-align: center;       /* Asegura que el texto del <p> esté centrado */
-    padding: 20px;
-  margin-bottom: 50px;            /* Espaciado interno */
-  border: 1px solid #ddd;   /* Para que se vea la forma de la card */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    cursor: pointer;
-    transition: background-color 0.25s, color 0.25s;
+padding: 20px;
+  margin-bottom: 50px;            /* Espaciado interno */   /* Para que se vea la forma de la card */
+border-radius: 15px;
+box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+
+outline: none;
+transition: background-color 0.25s, color 0.25s;
+background: transparent;
 }
 
 .card-img-top {
@@ -323,18 +321,9 @@ footer {
     object-fit: contain;
     height: 110px;    /* Mantiene la proporción del SVG */
 }
-
-.card-modalidades{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 150px;
-    width: 150px;
+.card-text{
     font-size: 30px;
 }
-
 .titulo-modalidad,h2{
     padding: 20px;
     font-family: 'Playfair Display', serif;
@@ -342,32 +331,4 @@ footer {
     font-weight: 700;
     color: #7b0d1e;
     margin-bottom: 12px;
-}
-.card-modalidades:hover{
-    background-color: rgba(255, 255, 255, 0.12);
-    color: #7b0d1e;
-}
-.modalidad{
-    padding: 100px;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vh;
-    background-color: #7b0d1e;
-}
-.card-img-top{
-    width: 170px;
-    height: 170px;
-    margin: 10px;
-    
-}
-.seccion-carreras{
-    background-color: #7b0d1e;
-}
-.card-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
