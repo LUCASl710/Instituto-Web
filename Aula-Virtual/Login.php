@@ -14,7 +14,7 @@
 
         <!-- Logo y nombre -->
         <div class="login-header">
-            <img class="login-logo" src="../Assets/Img/diseño1.png" alt="Logo C&P SOFT">
+            <img class="login-logo" src="../Assets/Img/fff.png" alt="Logo C&P SOFT">
             <div class="titulo-header">
                 <span class="titulo-cp">C&P</span>
                 <span class="titulo-soft">SOFT</span>
