@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula Virtual — C&P SOFT</title>
-    <link rel="stylesheet" href="./Assets/Estilos.css">
+    <link rel="stylesheet" href="../login.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 </head>
@@ -14,7 +14,7 @@
 
         <!-- Logo y nombre -->
         <div class="login-header">
-            <img class="login-logo" src="./Assets/Img/diseño1.png" alt="Logo C&P SOFT">
+            <img class="login-logo" src="../Assets/Img/diseño1.png" alt="Logo C&P SOFT">
             <div class="titulo-header">
                 <span class="titulo-cp">C&P</span>
                 <span class="titulo-soft">SOFT</span>
