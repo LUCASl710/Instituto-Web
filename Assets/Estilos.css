@@ -119,11 +119,13 @@ ul {
     display: flex;
     justify-content: center;
     padding: 48px 0 40px;
-    background-color: #fff;
+    background-color: #7b0d1e;
 }
 
 .btn-carreras {
+    background-color: #ffffff;
     background-color: #fff;
+
     color: #c1121f;
     border: none;
     border-radius: 6px;
@@ -136,8 +138,10 @@ ul {
 }
 
 .btn-carreras:hover {
-    background-color: #ff979e;
-    transform: translateY(-2px);
+        background-color: #cf3f49;
+        background-color: #ff979e;
+transform: translateY(-2px);
+    color: #f0e0e0;
 }
 
 /* ========================
@@ -291,6 +295,35 @@ footer {
     margin: 5px;
 }
 
+.modalidades {
+  display: flex;            /* Activa el modo flexible */
+  justify-content: center;  /* Centra la card horizontalmente */
+  align-items: center;      /* Centra la card verticalmente */
+    flex-direction: column;
+  min-height: 50vh;        /* Importante: le da altura al section para que se note el centro */
+  background-color: #f8f9fa; /* (Opcional) Un color de fondo para ver el área */
+}
+
+.card-modalidades {
+    display: flex;
+  flex-direction: column;   /* Alinea imagen y texto en columna */
+  align-items: center;      /* Centra la imagen y el texto internamente */
+  text-align: center;       /* Asegura que el texto del <p> esté centrado */
+    padding: 20px;
+  margin-bottom: 50px;            /* Espaciado interno */
+  border: 1px solid #ddd;   /* Para que se vea la forma de la card */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+.card-img-top {
+  margin-bottom: 10px;      /* Despega la imagen del texto */
+    object-fit: contain;
+    height: 110px;    /* Mantiene la proporción del SVG */
+}
+
 .card-modalidades{
     text-align: center;
     display: flex;
@@ -300,10 +333,19 @@ footer {
     height: 150px;
     width: 150px;
     font-size: 30px;
-    box-shadow:  0 4px 8px rgba(0,0,0,0.3);
-    background: transparent;
-    border-radius: 15px;
-    margin: 100px;
+}
+
+.titulo-modalidad,h2{
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #7b0d1e;
+    margin-bottom: 12px;
+}
+.card-modalidades:hover{
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #7b0d1e;
 }
 .modalidad{
     padding: 100px;
