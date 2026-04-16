@@ -1,3 +1,4 @@
+<?php session_start();?>
 <?php require_once './conexion.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -28,7 +29,12 @@
             <p class="login-descripcion">Ingresá con tu DNI y contraseña</p>
 
             <!-- Acá va el action cuando conectemos PHP -->
-            <form action="" method="POST">
+            <?php if (isset($_GET['error'])): ?>
+    <div class="alert-error">
+        DNI o contraseña incorrectos. Intentá de nuevo.
+    </div>
+            <?php endif; ?>
+            <form action="./autenticar.php" method="POST">
 
                 <div class="mb-3">
                     <label for="dni" class="form-label label-login">DNI / Usuario</label>
@@ -44,7 +50,7 @@
 
             </form>
 
-            <a href="./index.html" class="login-volver">← Volver al inicio</a>
+            <a href="../index.html" class="login-volver">← Volver al inicio</a>
         </div>
 
     </div>
