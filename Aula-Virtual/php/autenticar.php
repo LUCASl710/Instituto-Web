@@ -22,14 +22,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['rol'] = $usuario['rol'];
 
         if ($usuario['rol'] == 'profesor') {
-            header("Location: ./dashboard-profesor.php");
+            header("Location: /Instituto-Web/Aula-Virtual/dashboard-profesor.php");
         } else {
-            header("Location: ./dashboard-alumno.php");
+            header("Location: /Instituto-Web/Aula-Virtual/dashboard-alumno.php");
         }
         exit();
     } else {
-        header("Location: ./Login.php?error=1");
-        exit();
+        header("Location: /Instituto-Web/Aula-Virtual/Login.php?error=1");        exit();
     }
 }
 ?>
