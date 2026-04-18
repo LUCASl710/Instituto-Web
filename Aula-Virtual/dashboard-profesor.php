@@ -13,7 +13,7 @@ if (!isset($_SESSION['id']) || $_SESSION['rol'] != 'profesor') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula Virtual — Profesor</title>
-    <link rel="stylesheet" href="./Assets/Estilos.css">
+    <link rel="stylesheet" href="../Assets/Estilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 </head>
