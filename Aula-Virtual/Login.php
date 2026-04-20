@@ -1,5 +1,5 @@
 <?php session_start();?>
-<?php require_once './conexion.php'; ?>
+<?php require_once './php/conexion.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -34,7 +34,7 @@
         DNI o contraseña incorrectos. Intentá de nuevo.
     </div>
             <?php endif; ?>
-            <form action="./autenticar.php" method="POST">
+            <form action="./php/autenticar.php" method="POST">
 
                 <div class="mb-3">
                     <label for="dni" class="form-label label-login">DNI / Usuario</label>

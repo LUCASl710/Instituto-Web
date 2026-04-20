@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         exit();
     } else {
-        header("Location: /Instituto-Web/Aula-Virtual/Login.php?error=1");        exit();
+        header("Location: /Instituto-Web/Aula-Virtual/Login.php?error=1");
     }
 }
 ?>
