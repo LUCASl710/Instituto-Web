@@ -23,7 +23,7 @@ if (!isset($_SESSION['id']) || $_SESSION['rol'] != 'alumno') {
     <!-- SIDEBAR -->
     <div class="sidebar">
         <div class="sidebar-header">
-            <img src="./Assets/Img/diseño1.png" alt="Logo" class="sidebar-logo">
+            <img src="../Assets/Img/diseño1.png" alt="Logo" class="sidebar-logo">
             <div class="titulo-header">
                 <span class="titulo-cp">C&P</span>
                 <span class="titulo-soft">SOFT</span>
