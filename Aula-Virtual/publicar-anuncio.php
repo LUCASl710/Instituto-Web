@@ -68,7 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <a href="#" class="sidebar-link">📚 Mis Materias</a>
             <a href="publicar-anuncio.php" class="sidebar-link activo">📢 Publicar Anuncio</a>
             <a href="#" class="sidebar-link">📁 Subir Material</a>
-            <a href="#" class="sidebar-link">👥 Alumnos</a>
+            <a href="./alumnos.php" class="sidebar-link">👥 Alumnos</a>
         </nav>
         <a href="./php/cerrar-sesion.php" class="sidebar-cerrar">Cerrar sesión</a>
     </div>

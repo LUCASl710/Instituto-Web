@@ -285,3 +285,80 @@
     line-height: 1.6;
     margin: 0;
 }
+
+/* TIPO SELECTOR MATERIAL */
+.tipo-selector {
+    display: flex;
+    gap: 20px;
+}
+
+.tipo-opcion {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #7b0d1e;
+    cursor: pointer;
+}
+
+.tipo-opcion input {
+    accent-color: #7b0d1e;
+    width: 16px;
+    height: 16px;
+}
+/* MATERIALES */
+.material-card {
+    background-color: #ffffff;
+    border: 2px solid #f0dada;
+    border-radius: 10px;
+    padding: 16px 24px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: box-shadow 0.25s;
+}
+
+.material-card:hover {
+    box-shadow: 0 4px 16px rgba(123, 13, 30, 0.1);
+}
+
+.material-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.material-icono {
+    font-size: 1.8rem;
+}
+
+.material-titulo {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.material-materia {
+    font-size: 0.8rem;
+    color: #888;
+    margin: 4px 0 0;
+}
+
+.btn-material {
+    background-color: #7b0d1e;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    transition: background-color 0.25s;
+    white-space: nowrap;
+}
+
+.btn-material:hover {
+    background-color: #c1121f;
+    color: white;
+}

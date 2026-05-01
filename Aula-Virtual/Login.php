@@ -50,7 +50,7 @@
 
             </form>
 
-            <a href="../index.html" class="login-volver">← Volver al inicio</a>
+            <a href="../index.php" class="login-volver">← Volver al inicio</a>
         </div>
 
     </div>

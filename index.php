@@ -21,7 +21,7 @@
             </div>
 
             <ul>
-                <li><a class="link-nav" href="./index.html">Inicio</a></li>
+                <li><a class="link-nav" href="./index.php">Inicio</a></li>
                 <li><a class="link-nav" href="./Carreras.html">Carreras</a></li>
                 <li><a class="link-nav" href="./Contactos.html">Contactos</a></li>
             </ul>
@@ -84,54 +84,67 @@
 
 
 </div>
-</section>
-    <!-- Formulario -->
-    <section class="seccion-formulario">
-        <div class="container">
+<?php if (isset($_GET['enviado'])): ?>
+<div class="alerta-ok-landing">
+    ✅ Tu consulta fue enviada correctamente. Te contactaremos pronto.
+</div>
+<?php endif; ?>
 
-            <div class="texto-formulario">
-                <h2>Consultá por todas las carreras disponibles</h2>
-                <p>Completá el formulario con tus datos y un asesor se contactará con vos a la brevedad.</p>
-            </div>
+<?php if (isset($_GET['error'])): ?>
+<div class="alerta-error-landing">
+    ❌ Hubo un error. Completá los campos obligatorios.
+</div>
+<?php endif; ?>
 
-            <div class="row justify-content-center">
-                <div class="col-md-7">
-                    <div class="card-formulario">
+<!-- Formulario -->
+<section class="seccion-formulario">
+    <div class="container">
+
+        <div class="texto-formulario">
+            <h2>Consultá por todas las carreras disponibles</h2>
+            <p>Completá el formulario con tus datos y un asesor se contactará con vos a la brevedad.</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+                <div class="card-formulario">
+                    <form action="./Aula-Virtual/php/guardar-consulta.php" method="POST">
                         <div class="mb-3">
                             <label for="nombre" class="form-label">Nombre completo *</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre y apellido">
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre y apellido" required>
                         </div>
                         <div class="mb-3">
                             <label for="correo" class="form-label">Correo electrónico *</label>
-                            <input type="email" class="form-control" id="correo" placeholder="ejemplo@correo.com">
+                            <input type="email" class="form-control" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
                         </div>
                         <div class="mb-3">
                             <label for="whatsapp" class="form-label">WhatsApp *</label>
-                            <input type="tel" class="form-control" id="whatsapp" placeholder="Ej: 3812345678">
+                            <input type="tel" class="form-control" id="whatsapp" name="whatsapp" placeholder="Ej: 3812345678">
                         </div>
                         <div class="mb-3">
                             <label for="carrera" class="form-label">Carrera de interés *</label>
-                            <select class="form-select" id="carrera">
+                            <select class="form-select" id="carrera" name="carrera">
                                 <option value="" disabled selected>— Seleccione una carrera —</option>
-                                <option value="desarrollo">Tecnico en Desarrollo de Software</option>
-                                <option value="redes">Profesorado de </option>
+                                <option value="Técnico en Desarrollo de Software">Técnico en Desarrollo de Software</option>
+                                <option value="Profesorado de Matemáticas">Profesorado de Matemáticas</option>
                             </select>
                         </div>
                         <div class="mb-3">
                             <label for="asunto" class="form-label">Asunto</label>
-                            <input type="text" class="form-control" id="asunto" placeholder="¿Sobre qué querés consultar?">
+                            <input type="text" class="form-control" id="asunto" name="asunto" placeholder="¿Sobre qué querés consultar?">
                         </div>
                         <div class="mb-3">
                             <label for="mensaje" class="form-label">Tu consulta</label>
-                            <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribí tu consulta acá..."></textarea>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="3" placeholder="Escribí tu consulta acá..."></textarea>
                         </div>
-                        <button class="btn-enviar">Enviar</button>
-                    </div>
+                        <button type="submit" class="btn-enviar">Enviar</button>
+                    </form>
                 </div>
             </div>
-
         </div>
-    </section>
+
+    </div>
+</section>
 
     <!-- Botón flotante WhatsApp -->
     <a href="https://wa.me/qr/VV7W5YI4R5W5L1" target="_blank" class="btn-whatsapp" title="Contactanos por WhatsApp">

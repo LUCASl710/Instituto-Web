@@ -10,9 +10,9 @@ if (!isset($_SESSION['id']) || $_SESSION['rol'] != 'profesor') {
 // Traer materias del profesor
 $id_profesor = $_SESSION['id'];
 $query_materias = "SELECT m.id, m.nombre, c.nombre AS carrera 
-                   FROM materias m 
-                   JOIN carreras c ON m.id_carrera = c.id 
-                   WHERE m.id_profesor = ?";
+                FROM materias m 
+                JOIN carreras c ON m.id_carrera = c.id 
+                WHERE m.id_profesor = ?";
 $stmt = mysqli_prepare($conexion, $query_materias);
 mysqli_stmt_bind_param($stmt, "i", $id_profesor);
 mysqli_stmt_execute($stmt);
@@ -29,9 +29,9 @@ $total_anuncios = mysqli_fetch_assoc($resultado_anuncios)['total'];
 
 // Contar alumnos inscriptos en sus materias
 $query_alumnos = "SELECT COUNT(DISTINCT i.id_alumno) AS total 
-                  FROM inscripciones i 
-                  JOIN materias m ON i.id_materia = m.id 
-                  WHERE m.id_profesor = ?";
+                FROM inscripciones i 
+                JOIN materias m ON i.id_materia = m.id 
+                WHERE m.id_profesor = ?";
 $stmt3 = mysqli_prepare($conexion, $query_alumnos);
 mysqli_stmt_bind_param($stmt3, "i", $id_profesor);
 mysqli_stmt_execute($stmt3);
@@ -62,8 +62,8 @@ $total_alumnos = mysqli_fetch_assoc($resultado_alumnos)['total'];
             <a href="dashboard-profesor.php" class="sidebar-link activo">🏠 Inicio</a>
             <a href="#" class="sidebar-link">📚 Mis Materias</a>
             <a href="publicar-anuncio.php" class="sidebar-link">📢 Publicar Anuncio</a>
-            <a href="#" class="sidebar-link">📁 Subir Material</a>
-            <a href="#" class="sidebar-link">👥 Alumnos</a>
+            <a href="./subir-material.php" class="sidebar-link">📁 Subir Material</a>
+            <a href="./alumnos.php" class="sidebar-link">👥 Alumnos</a>
         </nav>
         <a href="./php/cerrar-sesion.php" class="sidebar-cerrar">Cerrar sesión</a>
     </div>

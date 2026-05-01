@@ -145,7 +145,42 @@ $anuncios = mysqli_fetch_all($resultado_anuncios, MYSQLI_ASSOC);
                 <p class="sin-datos">No hay anuncios todavía.</p>
             <?php endif; ?>
         </div>
-
+<!-- Materiales -->
+<?php
+$query_materiales = "SELECT mat.titulo, mat.tipo, mat.url, mat.fecha, m.nombre AS materia
+                    FROM materiales mat
+                    JOIN materias m ON mat.id_materia = m.id
+                    JOIN inscripciones i ON i.id_materia = m.id
+                    WHERE i.id_alumno = ?
+                    ORDER BY mat.fecha DESC";
+$stmt3 = mysqli_prepare($conexion, $query_materiales);
+mysqli_stmt_bind_param($stmt3, "i", $id_alumno);
+mysqli_stmt_execute($stmt3);
+$resultado_materiales = mysqli_stmt_get_result($stmt3);
+$materiales = mysqli_fetch_all($resultado_materiales, MYSQLI_ASSOC);
+?>
+<div class="dashboard-seccion">
+    <h2 class="seccion-titulo">📁 Materiales</h2>
+    <?php if (count($materiales) > 0): ?>
+        <?php foreach ($materiales as $mat): ?>
+        <div class="material-card">
+            <div class="material-info">
+                <span class="material-icono"><?php echo $mat['tipo'] == 'archivo' ? '📄' : '🔗'; ?></span>
+                <div>
+                    <p class="material-titulo"><?php echo htmlspecialchars($mat['titulo']); ?></p>
+                    <p class="material-materia">📚 <?php echo htmlspecialchars($mat['materia']); ?></p>
+                </div>
+            </div>
+            <a href="<?php echo $mat['tipo'] == 'archivo' ? '../' . $mat['url'] : htmlspecialchars($mat['url']); ?>"
+               target="_blank" class="btn-material">
+                <?php echo $mat['tipo'] == 'archivo' ? 'Descargar' : 'Abrir link'; ?>
+            </a>
+        </div>
+        <?php endforeach; ?>
+    <?php else: ?>
+        <p class="sin-datos">No hay materiales disponibles todavía.</p>
+    <?php endif; ?>
+</div>
         <!-- Info del alumno -->
         <div class="dashboard-seccion">
             <h2 class="seccion-titulo">Mis datos</h2>
